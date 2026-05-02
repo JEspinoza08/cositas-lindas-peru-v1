@@ -94,7 +94,7 @@ const products: Product[] = [
   { id: "box-30-tul", name: "Box 30 Tulipanes", category: "Boxes", price: 350, description: "Impactante box con 30 tulipanes rojos llenos de vida.", image: box30Tul },
   { id: "box-radiante", name: "Box Radiante", category: "Boxes", price: 220, description: "Arreglo floral elegante con lirios frescos en tonos rosados, ideal para sorprender.", image: boxRadiante },
   { id: "box-15-gir", name: "Box 15 Girasoles", category: "Boxes", price: 120, description: "Box vibrante con girasoles frescos que transmiten alegría y energía.", image: box15Gir },
-  { id: "box-12-rosas", name: "Box 12 Rosas", category: "Boxes", price: 150, description: "Clásico box de rosas rojas, perfecto para expresar amor y pasión.", image: box12Rosas },
+  { id: "box-12-rosas", name: "Box 12 Rosas", category: "Boxes", price: 120, description: "Clásico box de rosas rojas, perfecto para expresar amor y pasión.", image: box12Rosas },
   { id: "box-24-rosas", name: "Box 24 Rosas", category: "Boxes", price: 160, description: "Box de 24 rosas frescas y luminosas.", image: box24Rosas },
 
   // RAMOS
