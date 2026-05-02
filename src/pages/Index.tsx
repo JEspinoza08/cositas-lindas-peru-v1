@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import logo from "@/assets/logo.jpg";
+import logoText from "@/assets/letras-logo.png";
 import heroImg from "@/assets/hero-bouquet.webp";
 import heroMothersDay from "@/assets/hero-mothers-day.webp";
 import heroShop from "@/assets/hero-shop.webp";
@@ -253,6 +254,14 @@ const Index = () => {
                 className="absolute inset-0"
                 style={{ background: "linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.7) 100%)" }}
               />
+              {/* Logo marca abajo derecha */}
+<img
+  src={logoText}
+  alt=""
+  aria-hidden="true"
+  className="pointer-events-none absolute bottom-6 right-6 md:bottom-14 md:right-20 
+           h-32 md:h-48 object-contain opacity-35 mix-blend-screen"
+/>
             </div>
           ))}
 
