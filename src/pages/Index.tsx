@@ -176,7 +176,7 @@ const ProductCard = ({ p }: { p: Product }) => {
           className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-whatsapp px-4 py-2.5 text-xs font-semibold text-whatsapp-foreground transition-all hover:opacity-90 hover:shadow-soft"
         >
           <MessageCircle className="h-4 w-4" />
-          Cotizar por WhatsApp
+          Pedir por WhatsApp
         </a>
       </div>
     </article>
@@ -211,13 +211,15 @@ const Index = () => {
         <div className="container flex items-center justify-between py-4">
           <a href="#inicio" className="flex items-center gap-3">
             <img src={logo} alt="Cositas Lindas Perú logo" className="h-12 w-12 rounded-full object-cover shadow-soft ring-2 ring-primary-foreground/40" />
-            <div className="leading-tight text-primary-foreground">
-              <p className="font-display text-lg font-semibold">Cositas Lindas</p>
-              <p className="text-[10px] uppercase tracking-[0.2em] text-primary-foreground/80">Flores · Detalles · Perú</p>
-            </div>
+            <div className="leading-tight text-primary-foreground font-sans">
+  <p className="text-lg font-semibold tracking-wide">COSITAS LINDAS</p>
+  <p className="text-[10px] uppercase tracking-[0.2em] text-primary-foreground/80 font-light">
+    Flores · Detalles · Perú
+  </p>
+</div>
           </a>
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-primary-foreground/90">
-            <a href="#bouquets" className="hover:text-primary-foreground transition-colors">Catálogo</a>
+          <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-primary-foreground/90 font-sans">
+            <a href="#dia-de-la-madre" className="hover:text-primary-foreground transition-colors">Catálogo</a>
             <a href="#categorias" className="hover:text-primary-foreground transition-colors">Detalles</a>
             <a href="#ocasiones" className="hover:text-primary-foreground transition-colors">Ocasiones</a>
             <a href="#galeria" className="hover:text-primary-foreground transition-colors">Galería</a>
@@ -274,7 +276,7 @@ const Index = () => {
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="rounded-full h-14 px-8 bg-transparent border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground text-base">
-                  <a href="#bouquets"><Search className="h-4 w-4" /> Ver catálogo</a>
+                  <a href="#dia-de-la-madre"><Search className="h-4 w-4" /> Ver catálogo</a>
                 </Button>
               </div>
               <div className="flex flex-wrap items-center gap-6 pt-2 text-sm text-primary-foreground/85">
@@ -338,12 +340,12 @@ const Index = () => {
       </section>
 
       {/* CATALOGO */}
-      <section id="bouquets" className="py-20 lg:py-28 bg-gradient-soft">
+      <section id="dia-de-la-madre" className="py-20 lg:py-28 bg-gradient-soft">
         <div className="container">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
             <div className="max-w-2xl">
               <p className="text-xs uppercase tracking-[0.25em] text-primary-deep font-semibold mb-3">Catálogo</p>
-              <h2 className="text-4xl lg:text-5xl font-display font-semibold leading-tight">Bouquets, arreglos y detalles</h2>
+              <h2 className="text-4xl lg:text-5xl font-display font-semibold leading-tight">Día de la Madre</h2>
               <p className="text-muted-foreground mt-4 leading-relaxed">Explora nuestras creaciones favoritas. Cada producto se hace bajo pedido y se puede personalizar a tu gusto.</p>
             </div>
             <a href={waLink()} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-primary-deep hover:underline inline-flex items-center gap-2">
