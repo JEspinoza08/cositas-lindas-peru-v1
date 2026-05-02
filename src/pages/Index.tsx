@@ -133,7 +133,7 @@ const categories = [
 ];
 
 const ProductCard = ({ p }: { p: Product }) => {
-  const msg = `Hola Cositas Lindas Perú 💜 Quisiera cotizar: ${p.name} (S/. ${p.price}). ¿Me pueden enviar más información y fotos?`;
+  const msg = `Hola Cositas Lindas Perú 💜 Quiero este producto: ${p.name} (S/. ${p.price}).`;
 
   return (
     <article className="group relative overflow-hidden rounded-2xl bg-gradient-card shadow-soft hover:shadow-elegant transition-all duration-500 hover:-translate-y-1 flex flex-col">
@@ -233,7 +233,7 @@ const Index = () => {
 
       {/* HERO CARRUSEL */}
       <section id="inicio" className="relative overflow-hidden">
-        <div className="relative h-[80vh] min-h-[560px] max-h-[800px] w-full">
+        <div className="relative h-[calc(100vh-76px)] min-h-[620px] md:h-[80vh] md:min-h-[560px] max-h-[800px] w-full">
           {heroSlides.map((s, i) => (
             <div
               key={i}
@@ -261,7 +261,7 @@ const Index = () => {
                 <Sparkles className="h-3.5 w-3.5" /> {heroSlides[slide].badge}
               </span>
               <h1
-                className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tight drop-shadow-lg"
+                className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.08] tracking-tight drop-shadow-lg"
                 dangerouslySetInnerHTML={{ __html: heroSlides[slide].title }}
               />
               <p className="text-lg text-primary-foreground/90 max-w-xl leading-relaxed drop-shadow">
@@ -287,19 +287,20 @@ const Index = () => {
 
           {/* Controles */}
           <button
-            onClick={goPrev}
-            aria-label="Slide anterior"
-            className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 h-11 w-11 rounded-full bg-primary-foreground/15 hover:bg-primary-foreground/25 backdrop-blur border border-primary-foreground/30 text-primary-foreground flex items-center justify-center transition"
-          >
-            <ChevronLeft className="h-5 w-5" />
-          </button>
-          <button
-            onClick={goNext}
-            aria-label="Siguiente slide"
-            className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 h-11 w-11 rounded-full bg-primary-foreground/15 hover:bg-primary-foreground/25 backdrop-blur border border-primary-foreground/30 text-primary-foreground flex items-center justify-center transition"
-          >
-            <ChevronRight className="h-5 w-5" />
-          </button>
+  onClick={goPrev}
+  aria-label="Slide anterior"
+  className="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2 h-11 w-11 rounded-full bg-black/20 hover:bg-black/30 backdrop-blur-md border border-white/30 text-white items-center justify-center transition"
+>
+  <ChevronLeft className="h-5 w-5" />
+</button>
+
+<button
+  onClick={goNext}
+  aria-label="Siguiente slide"
+  className="hidden md:flex absolute right-6 top-1/2 -translate-y-1/2 h-11 w-11 rounded-full bg-black/20 hover:bg-black/30 backdrop-blur-md border border-white/30 text-white items-center justify-center transition"
+>
+  <ChevronRight className="h-5 w-5" />
+</button>
 
           {/* Indicadores */}
           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2">
