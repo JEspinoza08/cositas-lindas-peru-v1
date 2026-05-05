@@ -203,6 +203,19 @@ const Index = () => {
     const id = setInterval(() => setSlide((s) => (s + 1) % heroSlides.length), 6000);
     return () => clearInterval(id);
   }, []);
+  useEffect(() => {
+  const hash = window.location.hash;
+
+  if (hash) {
+    setTimeout(() => {
+      const element = document.querySelector(hash);
+      element?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 300);
+  }
+}, []);
 
   const goPrev = () => setSlide((s) => (s - 1 + heroSlides.length) % heroSlides.length);
   const goNext = () => setSlide((s) => (s + 1) % heroSlides.length);
@@ -358,7 +371,7 @@ const Index = () => {
       </section>
 
       {/* CATALOGO */}
-      <section id="dia-de-la-madre" className="py-20 lg:py-28 bg-gradient-soft">
+      <section id="dia-de-la-madre" className="scroll-mt-24 py-20 lg:py-28 bg-gradient-soft">
         <div className="container">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
             <div className="max-w-2xl">
