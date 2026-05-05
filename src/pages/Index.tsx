@@ -36,6 +36,11 @@ import ramo50Rosas from "@/assets/catalog_optimizado/ramo-50-rosas.webp";
 import box24Rosas from "@/assets/catalog_optimizado/box-24-rosas.webp";
 import ramo24Rosas from "@/assets/catalog_optimizado/ramo-24-rosas.webp";
 
+import rosa_eterna_amarilla from "@/assets/catalog_optimizado/rosa_eterna_amarilla.webp";
+import rosa_eterna_rosada from "@/assets/catalog_optimizado/rosa_eterna_rosada.webp";
+import rosa_eterna_roja from "@/assets/catalog_optimizado/rosa_eterna_roja.webp";
+import rosa_eterna_azul from "@/assets/catalog_optimizado/rosa_eterna_azul.webp";
+
 import { Heart, Flower2, Gift, Sparkles, MessageCircle, Instagram, Facebook, Phone, MapPin, Search, ShoppingBag, Star, ChevronLeft, ChevronRight, Package, Flower, Cat } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -111,6 +116,10 @@ const products: Product[] = [
   // ROSAS
   { id: "ramo-50-rosas", name: "Ramo 50 Rosas", category: "Rosas", price: 250, description: "Ramo vibrante de rosas con acabado delicado.", image: ramo50Rosas },
   { id: "ramo-24-rosas", name: "Ramo de 24 Rosas", category: "Rosas", price: 160, description: "24 rosas frescas con envoltura elegante.", image: ramo24Rosas },
+  { id: "rosa_eterna_amarilla", name: "Rosa Eterna Amarilla", category: "Rosas", price: 50, description: "Rosa eterna (rosa preservada) de 50cm con duración de hasta 7 años.", image: rosa_eterna_amarilla },
+  { id: "rosa_eterna_rosada", name: "Rosa Eterna Rosada", category: "Rosas", price: 50, description: "Rosa eterna (rosa preservada) de 50cm con duración de hasta 7 años.", image: rosa_eterna_rosada },
+  { id: "rosa_eterna_roja", name: "Rosa Eterna Roja", category: "Rosas", price: 50, description: "Rosa eterna (rosa preservada) de 50cm con duración de hasta 7 años.", image: rosa_eterna_roja },
+  { id: "rosa_eterna_azul", name: "Rosa Eterna Azul", category: "Rosas", price: 50, description: "Rosa eterna (rosa preservada) de 50cm con duración de hasta 7 años.", image: rosa_eterna_azul },
 
   // TEMÁTICAS
   { id: "caja-6-rosas-hk", name: "Caja 6 Rosas - Hello Kitty", category: "Temáticas", price: 50, description: "Caja de 6 rosas temática Hello Kitty, encantador detalle.", image: caja6RosasHK },
