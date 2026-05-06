@@ -104,7 +104,7 @@ const products: Product[] = [
 
   // RAMOS
   { id: "ramo-4-gir", name: "Ramo de 4 Girasoles", category: "Ramos", price: 50, description: "Ramo de 4 girasoles frescos envueltos en papel negro mate con acabado elegante.", image: ramo4Gir },
-  { id: "ramo-12-rosas-rojas", name: "Ramo de 12 Rosas Rojas", category: "Ramos", price: 150, description: "Ramo de 12 rosas rojas frescas, con detalles elegantes y lazo rojo sobre papel negro.", image: ramo12RosasRojas },
+  { id: "ramo-12-rosas-rojas", name: "Ramo de 12 Rosas Rojas", category: "Ramos", price: 120, description: "Ramo de 12 rosas rojas frescas, con detalles elegantes y lazo rojo sobre papel negro.", image: ramo12RosasRojas },
   { id: "ramo-liliums", name: "Ramo de Liliums", category: "Ramos", price: 150, description: "Ramo de lirios delicados y sofisticados, ideal para un regalo elegante y duradero.", image: ramoLiliums },
   { id: "ramo-20-tul-rojos", name: "Ramo de 20 Tulipanes Rojos", category: "Ramos", price: 250, description: "Ramo elegante con 20 tulipanes rojos frescos, cuidadosamente presentados con lazo.", image: ramo20TulRojos },
   { id: "ramo-10-tul-amar", name: "Ramo de 10 Tulipanes Amarillos", category: "Ramos", price: 150, description: "Ramo de 10 tulipanes frescos, elegante y perfecto para sorprender con un detalle especial.", image: ramo10TulAmar },
